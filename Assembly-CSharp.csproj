@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\AudioPeer.cs" />
     <Compile Include="Assets\scripts\Rotator.cs" />
+    <None Include="Assets\shaders\hw-2a-outline.shader" />
+    <None Include="Assets\shaders\Phong.shader" />
     <None Include="Assets\shaders\ParticleShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/briant/Documents/GitHub/CMPM163-hw3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
