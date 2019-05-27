@@ -23,18 +23,14 @@
             struct appdata
             {
                 float4 vertex : POSITION;
-                //Define UV data
 				float3 uv1 : TEXCOORD0;
-				//float4 uv2 : TEXCOORD1;
             };
 
             struct v2f
             {   
                 float4 vertex : SV_POSITION;
 				
-                //Define UV data
 				float3 uv1 : TEXCOORD0;
-				//float4 uv2 : TEXCOORD1;
             };
 
             sampler2D _MainTex;
@@ -45,7 +41,6 @@
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                //o.uv = v.uv; Correct this for particle shader
 				o.uv1.xy = v.uv1;
 				o.uv1.z = v.uv1.z;
 
@@ -54,19 +49,12 @@
 
             float4 frag (v2f i) : SV_Target
             {
-                //Get particle age percentage
 				//fixed4 color = tex2D(_MainTex, i.uv1);
 				float agePercentage = i.uv1.z;
 
-                //Sample color from particle texture
 				fixed4 color = tex2D(_MainTex, i.uv1);
 
-				//Find "Start Color"
-				
 
-                //Find "end color"
-               
-                //Do a linear interpolation of start color and end color based on particle age percentage
 				color = lerp(color *_StartColor, _EndColor * color.a, agePercentage);
 				//color = _StartColor;
 

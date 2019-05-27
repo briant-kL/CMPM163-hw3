@@ -26,4 +26,4 @@ Material:
     m_Floats: []
     m_Colors:
     - _EndColor: {r: 0, g: 0, b: 0, a: 0}
-    - _StartColor: {r: 0, g: 0.4888756, b: 0.5188679, a: 1}
+    - _StartColor: {r: 0.41509432, g: 0.4103756, b: 0, a: 1}
