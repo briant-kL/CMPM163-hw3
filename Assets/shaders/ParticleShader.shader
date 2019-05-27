@@ -43,7 +43,7 @@
                 o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv1.xy = v.uv1;
 				o.uv1.z = v.uv1.z;
-
+				v.vertex += sin(_Time.x * 10 + 2);
                 return o;
             }
 

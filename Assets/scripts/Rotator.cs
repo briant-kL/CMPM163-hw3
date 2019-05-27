@@ -46,15 +46,21 @@ public class Rotator : MonoBehaviour {
 		}
 
 		// Map the magnitude to the cubes based on the cube name.
-		if (gameObject.name == "Pickup") 
+		if (gameObject.name == "1-pillar_001") 
 		{
-			transform.localScale = new Vector3 (aveMag[0], aveMag[0], aveMag[0]);
-		} 
-		for (int i = 0; i < 7; i++) 
+			transform.localScale = new Vector3 (aveMag[0], aveMag[0], aveMag[0]) * 200;
+		}
+
+        if (gameObject.name == "fire")
+        {
+            transform.localScale = new Vector3(aveMag[0], aveMag[0], aveMag[0]);
+        }
+
+        for (int i = 0; i < 7; i++) 
 		{
 			int index = i + 1;
-			if (gameObject.name == "Pickup (" + index + ")") {
-				transform.localScale = new Vector3 (aveMag[index], aveMag[index], aveMag[index]);
+			if (gameObject.name == "1-pillar_001 (" + index + ")") {
+				transform.localScale = new Vector3 (aveMag[index], aveMag[index], aveMag[index]) * 400;
 			}
 		}
 

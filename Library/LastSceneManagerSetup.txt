@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/briant/Desktop/AudioVizPresentation/BallDemo_AudioViz/Assets/_Scenes/minigame.unity
+- path: Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1
